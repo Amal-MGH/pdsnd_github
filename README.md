@@ -7,11 +7,15 @@ version 1: 12/18/2022
 Analyzing bike sharing sytem  on usa 
 
 ### Description
-Describe what your project is about and what it does
+This project focusing on teaching python for data programming.
+using bike sharing data from there cities, our project will
+provide multi analysising answer based on user chosses.
 
 ### Files used
-Include the files used
+bikeshare_2.py
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+https://github.com/udacity
