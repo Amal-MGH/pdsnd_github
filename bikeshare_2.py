@@ -2,9 +2,12 @@ import time
 import pandas as pd
 import numpy as np
 
+# A dictionary of city with data files for each
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
+
+
 
 def get_filters():
     """
@@ -200,6 +203,7 @@ def main():
         user_stats(df)
         
         counter=5
+        # get user input to print indivilual trip data.
         while True:
             indivilual = input('\nWould you like to view indivilual trip data? Enter yes or no.\n')
             if indivilual.lower() == 'yes':
