@@ -194,8 +194,8 @@ def print_ndivilual_trip(df):
     while True:
         indivilual = input('\nWould you like to view indivilual trip data? Enter yes or no.\n')
         if indivilual.lower() == 'yes':
-            for i in range(counter):
-                print(df.loc[i].to_json())
+            for tripId in range(counter):
+                print(df.loc[tripId].to_json())
             counter+=counter
         else:
             break
