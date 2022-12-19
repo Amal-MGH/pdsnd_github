@@ -192,6 +192,18 @@ def user_stats(df):
     print('-'*40)
 
 
+def print_ndivilual_trip(df):
+    counter=5
+    while True:
+        indivilual = input('\nWould you like to view indivilual trip data? Enter yes or no.\n')
+        if indivilual.lower() == 'yes':
+            for tripId in range(counter):
+                print(df.loc[tripId].to_json())
+            counter+=counter
+        else:
+            break
+
+
 def main():
     while True:
         city, month, day = get_filters()
@@ -202,16 +214,6 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
         
-        counter=5
-        # get user input to print indivilual trip data.
-        while True:
-            indivilual = input('\nWould you like to view indivilual trip data? Enter yes or no.\n')
-            if indivilual.lower() == 'yes':
-                for i in range(counter):
-                    print(df.loc[i].to_json())
-                counter+=counter
-            else:
-                break
                 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
