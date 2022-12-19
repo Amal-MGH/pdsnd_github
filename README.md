@@ -4,18 +4,18 @@
 version 1: 12/18/2022
 
 ### Bikeshare
-Analyzing bike sharing sytem  on usa 
+Analyzing bike sharing system on U.S. 
 
 ### Description
-This project focusing on teaching python for data programming.
-using bike sharing data from there cities, our project will
-provide multi analysising answer based on user chosses.
+In this project, you will make use of Python to explore data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington. You will write code to import the data and answer interesting questions about it by computing descriptive statistics. You will also write a script that takes in raw input to create an interactive experience in the terminal to present these statistics.
 
 ### Files used
-bikeshare_2.py
-chicago.csv
-new_york_city.csv
-washington.csv
+the following software requirements apply:
+
+*You should have Python 3, NumPy, and pandas installed using Anaconda
+*A text editor, like Sublime or Atom.
+*A terminal application (Terminal on Mac and Linux or Cygwin on Windows).
+
 
 ### Credits
 https://github.com/udacity
