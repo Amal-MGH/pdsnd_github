@@ -2,9 +2,9 @@ import time
 import pandas as pd
 import numpy as np
 
-CITY_DATA = { 'chicago': 'chicago.csv',
-              'new york city': 'new_york_city.csv',
-              'washington': 'washington.csv' }
+CITY_DATA = { 'chicago': 'C:/Users/AMAL/myfile/pdsnd_github/chicago.csv',
+              'new york city': 'C:/Users/AMAL/myfile/pdsnd_github/new_york_city.csv',
+              'washington': 'C:/Users/AMAL/myfile/pdsnd_github/washington.csv' }
 
 def get_filters():
     """
@@ -189,6 +189,18 @@ def user_stats(df):
     print('-'*40)
 
 
+def print_ndivilual_trip(df):
+    counter=5
+    while True:
+        indivilual = input('\nWould you like to view indivilual trip data? Enter yes or no.\n')
+        if indivilual.lower() == 'yes':
+            for i in range(counter):
+                print(df.loc[i].to_json())
+            counter+=counter
+        else:
+            break
+
+
 def main():
     while True:
         city, month, day = get_filters()
@@ -199,15 +211,8 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
         
-        counter=5
-        while True:
-            indivilual = input('\nWould you like to view indivilual trip data? Enter yes or no.\n')
-            if indivilual.lower() == 'yes':
-                for i in range(counter):
-                    print(df.loc[i].to_json())
-                counter+=counter
-            else:
-                break
+        print_ndivilual_trip(df)
+
                 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
